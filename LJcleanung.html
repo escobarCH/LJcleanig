@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <link rel="shortcut icon" href="/img/logo clean.jpg" type="image/x-icon">
+
+  <title>LJ Cleaning Services</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f8ff;
+      color: #003366;
+    }
+
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    img {
+        border-radius: 1000px;
+
+    }
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: white; /* Adjusted for header */
+    }
+
+    h2 {
+      color: #004080;
+    }
+
+    .about {
+      background-color: #e6f2ff;
+    }
+
+    .schedule {
+      background-color: #d9ecff;
+    }
+
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, select, button {
+      padding: 12px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #004080;
+      color: white;
+      cursor: pointer;
+      border: none;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #002f5e;
+    }
+
+    .confirmation {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #006600;
+      display: none;
+    }
+
+    /* Styles for Our Services Section */
+    #our-services {
+      background-color: #f0f8ff;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    #our-services h2 {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    #our-services > div { /* Flex container for service items */
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    #our-services > div > div { /* Individual service item */
+      width: 280px;
+    }
+
+    #our-services img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    #our-services h3 {
+      color: #003366;
+      margin-top: 10px;
+    }
+
+    /* Styles for Reviews Section */
+    #reviews {
+      background-color: #e6f0fa;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    #reviews h2 {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    #review-form {
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    #review-form label {
+      font-weight: bold;
+    }
+
+    #reviews-list {
+      margin-top: 40px;
+      text-align: left;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #reviews-list > div { /* Individual review item */
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 15px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    #reviews-list strong {
+      color: #003366; /* Adjust as needed */
+    }
+
+    #reviews-list span { /* For stars */
+      color: #ff9900;
+    }
+
+    #reviews-list p {
+      margin: 10px 0 0;
+    }
+
+    /* Styles for Instagram Button Section */
+    .instagram-button-section {
+      text-align: center;
+      padding: 40px;
+      background-color: #f0f8ff;
+    }
+
+    .instagram-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 15px 30px;
+      background-color: #004080;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .instagram-button:hover {
+      background-color: #003060;
+      transform: scale(1.05);
+
+    }
+
+
+      @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column; /* Apila las columnas en pantallas pequeñas */
+                align-items: center;
+            }
+        }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="/img/logo clean.jpg" alt="Descripción de la imagen" width="200" height="150">
+    <h1>LJ Cleaning Services</h1>
+    <p>Your trusted partner for spotless spaces</p>
+  </header>
+
+  <section class="about" id="about-us">
+    <h2>About Us</h2>
+    <p>
+      At LJ Cleaning Services, we are dedicated to providing top-notch cleaning services
+      tailored to fit your needs. With professional staff and years of experience, we take pride
+      in making homes and offices sparkle. Let us handle the mess while you enjoy a fresh and clean space.
+    </p>
+  </section>
+
+  <section id="our-services">
+    <h2>Our Services</h2>
+    <div>
+      <div>
+        <img src="/img/house clean.jpg" alt="House Cleaning">
+        <h3>House Cleaning</h3>
+      </div>
+      <div>
+        <img src="/img/batron clean.jpg" alt="Office Cleaning">
+        <h3>Office Cleaning</h3>
+      </div>
+      <div>
+        <img src="/img/cook clean.jpg" alt="Post Construction">
+        <h3>Post Construction Cleaning</h3>
+      </div>
+      <div>
+        <img src="/img/señora valando.jpg" alt="Deep Cleaning">
+        <h3>Deep Cleaning</h3>
+      </div>
+      <div>
+        <img src="img/sala clean.jpg" alt="Move In/Out Cleaning">
+        <h3>Move In / Move Out Cleaning</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="schedule" id="schedule">
+     <style>
+        /* Estilos para el botón de WhatsApp */
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px; /* Distancia desde abajo */
+            right: 20px; /* Distancia desde la derecha */
+            background-color: #25d366; /* Color de fondo de WhatsApp */
+            color: white;
+            border-radius: 50%; /* Para hacerlo redondo */
+            width: 60px; /* Ancho del botón */
+            height: 60px; /* Alto del botón */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px; /* Tamaño del icono */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra para que destaque */
+            z-index: 1000; /* Asegura que esté por encima de otros elementos */
+            text-decoration: none; /* Quita el subrayado del enlace */
+            transition: background-color 0.3s ease; /* Transición suave al pasar el ratón */
+        }
+
+        .whatsapp-button:hover {
+            background-color: #1da851; /* Un poco más oscuro al pasar el ratón */
+        }
+    </style>
+</head>
+<body>
+
+
+
+    <a href="https://wa.me/15096693863?text=HI! i need information of cleaning services." class="whatsapp-button" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+  </section>
+
+
+
+  <section class="instagram-button-section">
+    <a href="https://www.instagram.com/ljcleaningservices2022" target="_blank" class="instagram-button">
+      <svg width="24" height="24" fill="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.9.3 2.3.5.5.2.8.4 1.2.8.4.4.6.7.8 1.2.2.4.4 1.1.5 2.3.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.9-.5 2.3-.2.5-.4.8-.8 1.2-.4.4-.7.6-1.2.8-.4.2-1.1.4-2.3.5-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.9-.3-2.3-.5a3.4 3.4 0 0 1-1.2-.8 3.4 3.4 0 0 1-.8-1.2c-.2-.4-.4-1.1-.5-2.3C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-1.9.5-2.3.2-.5.4-.8.8-1.2.4-.4.7-.6 1.2-.8.4-.2 1.1-.4 2.3-.5C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.7.1-1.1.1-1.6.2-2 .4-.5.2-.8.5-1.1.8-.3.3-.6.6-.8 1.1-.2.4-.3.9-.4 2-.1 1.2-.1 1.6-.1 4.7s0 3.5.1 4.7c.1 1.1.2 1.6.4 2 .2.5.5.8.8 1.1.3.3.6.6 1.1.8.4.2.9.3 2 .4 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1.1-.1 1.6-.2 2-.4.5-.2.8-.5 1.1-.8.3-.3.6-.6.8-1.1.2-.4.3-.9.4-2 .1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c-.1-1.1-.2-1.6-.4-2a2.6 2.6 0 0 0-.8-1.1c-.3-.3-.6-.6-1.1-.8-.4-.2-.9-.3-2-.4-1.2-.1-1.6-.1-4.7-.1zm0 3.7a5.9 5.9 0 1 1 0 11.8 5.9 5.9 0 0 1 0-11.8zm0 9.7a3.8 3.8 0 1 0 0-7.6 3.8 3.8 0 0 0 0 7.6zm5.6-10.4a1.3 1.3 0 1 1 0-2.6 1.3 1.3 0 0 1 0 2.6z"/>
+      </svg>
+      Visit us on Instagram
+    </a>
+  </section>
+  
+
+
+
+
+<footer>   <p>&copy; 2025 LJcleaning. All rights reserved.</p> </footer>
+
+</body>
+</html> 
